@@ -107,7 +107,7 @@ See also the list of [contributors](https://github.com/oyl-wallet/oyl-sdk/contri
 
 ## Contract Tools Subproject
 
-The `contract-tools` subproject, located in the `contract-tools/` directory, provides a backend API service designed to facilitate the deployment and interaction with Wasm-based smart contracts on the OYL network.
+The `contract-tools` subproject, located in the `contract-tools/` directory, provides a **NestJS-based** backend API service designed to facilitate the deployment and interaction with Wasm-based smart contracts on the OYL network.
 
 It offers endpoints for:
 - Pre-deploying contracts (calculating costs and generating PSBTs for user signing).
@@ -116,7 +116,7 @@ It offers endpoints for:
 
 ### Running Contract Tools
 
-To run the contract tools service:
+To run the contract tools service (now a NestJS application):
 
 1.  Navigate to the subproject directory:
     ```bash
@@ -130,8 +130,8 @@ To run the contract tools service:
     ```
 3.  Start the development server:
     ```bash
-    npm run dev
+    npm run start:dev
     ```
-    This will typically start the service on `http://localhost:3000`.
+    This will typically start the service on `http://localhost:3000` with hot-reloading enabled.
 
-For detailed information about the API endpoints and their usage, please refer to the [Contract Tools README](./contract-tools/README.md).
+For detailed information about the API endpoints and their usage, please refer to the updated [Contract Tools README](./contract-tools/README.md).
